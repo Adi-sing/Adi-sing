@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paris - Explore The World</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: paris.jpg;
+        color: #222;
+    }
+
+    /* ---------- HERO SECTION ---------- */
+    .hero {
+        width: 100%;
+        height: 60vh;
+        background: url("paris.jpg") center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.4);
+        top: 0;
+        left: 0;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+        z-index: 1;
+    }
+
+    /* ---------- CONTENT SECTION ---------- */
+    .container {
+        width: 90%;
+        margin: auto;
+        padding: 50px 0;
+    }
+
+    .about {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        margin-bottom: 40px;
+    }
+
+    .about h2 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    .about p {
+        line-height: 1.7;
+        font-size: 1.1rem;
+    }
+
+    /* ---------- THINGS TO DO ---------- */
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: 0.25s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card h3 {
+        padding: 15px;
+        margin: 0;
+    }
+
+    /* ---------- GALLERY ---------- */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+        background: #222;
+        text-align: center;
+        padding: 20px;
+        color: white;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Paris, France</h1>
+</div>
+
+<div class="container">
+
+    <!-- ABOUT PARIS -->
+    <div class="about">
+        <h2>About Paris</h2>
+        <p>
+            Paris, the capital of France, is known as the "City of Light" and is one of the
+            world's most popular travel destinations. Famous for its art, fashion, culture,
+            and iconic landmarks like the Eiffel Tower and Louvre Museum, Paris offers a
+            romantic and unforgettable travel experience.
+        </p>
+    </div>
+
+    <!-- THINGS TO DO -->
+    <h2 class="section-title">Top Things To Do</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="paris_visit1.jpg" alt="">
+            <h3>Visit the Eiffel Tower</h3>
+        </div>
+
+        <div class="card">
+            <img src="paris_visit2.jpg" alt="">
+            <h3>Explore the Louvre Museum</h3>
+        </div>
+
+        <div class="card">
+            <img src="paris_visit3.jpg" alt="">
+            <h3>See Notre-Dame Cathedral</h3>
+        </div>
+
+        <div class="card">
+            <img src="paris_visit4.jpg" alt="">
+            <h3>Seine River Cruise</h3>
+        </div>
+
+    </div>
+
+    <!-- GALLERY -->
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery">
+        <img src="paris1.jpg">
+        <img src="paris2.jpg">
+        <img src="paris3.jpg">
+        <img src="paris4.jpg">
+        <img src="paris5.webp">
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+        <p>© 2025 TravelX. All Rights Reserved.</p>
+    <p>Created by <a href="#">Brainy Bunch Group </a></p>
+    <p>🔹 Aditya Singh – Frontend Developer & UI Designer</p>
+    <p>🔹Rudra Pratap Rai– Content Writer & Image Curator</p>
+    <p>🔹Ankit Kumar Tiwari– JavaScript Developer & Search Functionality</p>
+    <p>🔹 Ashish Kumar Singh– CSS Stylist & Layout Designer</p>
+    <p>🔹Aman Singh– Tester & Documentation Lead</p>
+</footer>
+
+</body>
+</html>
